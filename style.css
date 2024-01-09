@@ -39,6 +39,7 @@ button:hover {
 }
 
 .card {
+    flex: 1 1 100%;
     height: 240px;
     width: 240px;
     border: 1px solid #FFFFFF;
@@ -46,8 +47,22 @@ button:hover {
     background-color: #FFFFFF;
 }
 
+@media only screen and (min-width: 500px) {
+    .card {
+        flex: 1 1 45%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+        flex: 1 1 23%;
+    }
+}
+
+
 .card img {
     height: 160px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
